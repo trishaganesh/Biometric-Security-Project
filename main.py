@@ -24,7 +24,7 @@ def main():
     #  which_filer = "bandpass" or "filfit" or "FIR" or "kalman"
     #  segmentation_method = "window" or RR
     #
-    ##########################################################################
+    #########################################################################
     # print("Enrolling")
     qrs = 'pantompkins'
     filter = 'FIR'
