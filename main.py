@@ -6,7 +6,7 @@ def main():
         template_method='template_avg',
         discrete_wavelet_type=discrete_wavelet_type, 
         continuous_wavelet='gaus1',
-        continuous_wt_scale=50,
+        continuous_wt_scale=50, 
         feature_method='non-fiducial',
         segmentation_method="window")
 
