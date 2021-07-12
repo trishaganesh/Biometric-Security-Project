@@ -11,7 +11,9 @@ y = set([QR Interval, RS Interval, PQ Interval, QS Interval, PS Interval, PR Int
          QS Distance, ST Distance, RT Distance])
 
 y.append(#insert value to add/extend)
-
+print(y)
+         
+         
 def main():
     # ecg_authenticate = ecg_authentication(template_method='template_5_set')
     discrete_wavelet_type = 'db4'
