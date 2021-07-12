@@ -10,6 +10,7 @@ y = set([QR Interval, RS Interval, PQ Interval, QS Interval, PS Interval, PR Int
          QR Amplitude, PR Slope, PQ Slope, QS Slope, ST Slope, RT Slope, PR Distance, PQ Distance,
          QS Distance, ST Distance, RT Distance])
 
+y.append(#insert value to add/extend)
 
 def main():
     # ecg_authenticate = ecg_authentication(template_method='template_5_set')
