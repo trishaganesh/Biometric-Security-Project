@@ -1,6 +1,16 @@
 #thirty features sets to be extended (will be updated)
 #initialize String values for feature sets (will be updated)
 
+#set(<iter>)
+
+#30 sets (to be tested)
+y = set([QR Interval, RS Interval, PQ Interval, QS Interval, PS Interval, PR Interval
+         ST Interval, QT Interval, RT Interval, PT Interval, PR Amplitude, PQ Amplitude, 
+         RT Amplitude, PS Amplitude, PT Amplitude, QS Amplitude, TQ Amplitude, TS Amplitude, 
+         QR Amplitude, PR Slope, PQ Slope, QS Slope, ST Slope, RT Slope, PR Distance, PQ Distance,
+         QS Distance, ST Distance, RT Distance])
+
+
 def main():
     # ecg_authenticate = ecg_authentication(template_method='template_5_set')
     discrete_wavelet_type = 'db4'
