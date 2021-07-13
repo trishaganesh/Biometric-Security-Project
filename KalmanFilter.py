@@ -730,7 +730,12 @@ class ecg_authentication:
                     prq_angle,
                     trs_angle,
                     qrs_angle,
-                    rst_angle]
+                    rst_angle,
+                    rqt_angle,
+                    qst_angle,
+                    srq_angle,
+                    tpr_angle,
+                    qts_angle]
     
     #arccos(QRSp*point1)/(QRSp*point2)
         
