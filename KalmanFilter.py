@@ -710,6 +710,17 @@ class ecg_authentication:
             (one_segment[point1] - one_segment[point2])
         distance = math.sqrt(x_axs + y_axs)
         return distance
+    
+    #get angles method
+    def __get_angles(self, point1, point2, one_segment):
+        x_axs = arccos(one_segment[point1] * point1)
+        y_axs = (one_segment[point2] * point2) 
+            (one_segment[point1] - one_segment[point2])
+         angles =  x_axs / y_axs
+         return angles
+    
+    #arccos(QRSp*point1)/(QRSp*point2)
+        
 
     def __get_fiducial_points(self, segmented_signal_for_all_users):
         for each_user in range(segmented_signal_for_all_users.__len__()):
