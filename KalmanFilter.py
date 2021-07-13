@@ -718,6 +718,19 @@ class ecg_authentication:
             (one_segment[point1] - one_segment[point2])
          angles =  360 - (x_axs / y_axs)
          return angles
+        
+         qpr_angle = self.__get_slope(q_peak, p_peak, r_peak, one_segment)
+         prq_angle = self.__get_slope(p_peak, r_peak, q_peak, one_segment)
+         trs_angle = self.__get_slope(t_peak, r_peak, t_peak, one_segment)
+         qrs_angle = self.__get_slope(q_peak, r_peak, s_peak, one_segment)
+         rst_angle = self.__get_slope(r_peak, s_peak, t_peak, one_segment)
+
+                n_peaks_angle = [
+                    qpr_angle,
+                    prq_angle,
+                    trs_angle,
+                    qrs_angle,
+                    rst_angle]
     
     #arccos(QRSp*point1)/(QRSp*point2)
         
