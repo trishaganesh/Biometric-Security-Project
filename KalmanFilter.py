@@ -823,6 +823,8 @@ class ecg_authentication:
                     fiducial_points.append(each)
                 for each in n_peaks_slope:
                     fiducial_points.append(each)
+                for each in n_peaks_angles:
+                    fiducial_points.append(each)
                 fiducial_points = np.array(fiducial_points)
                 # print(fiducial_points)
                 segmented_signal_for_all_users[each_user][each_segment].append(
