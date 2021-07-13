@@ -713,10 +713,10 @@ class ecg_authentication:
     
     #get angles method
     def __get_angles(self, point1, point2, one_segment):
-        x_axs = arccos(one_segment[point1] * point1)
+        x_axs = math.acos(one_segment[point1] * point1)
         y_axs = (one_segment[point2] * point2) 
             (one_segment[point1] - one_segment[point2])
-         angles =  x_axs / y_axs
+         angles =  360 - (x_axs / y_axs)
          return angles
     
     #arccos(QRSp*point1)/(QRSp*point2)
