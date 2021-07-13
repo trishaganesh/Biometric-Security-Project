@@ -719,11 +719,16 @@ class ecg_authentication:
          angles =  360 - (x_axs / y_axs)
          return angles
         
-         qpr_angle = self.__get_slope(q_peak, p_peak, r_peak, one_segment)
-         prq_angle = self.__get_slope(p_peak, r_peak, q_peak, one_segment)
-         trs_angle = self.__get_slope(t_peak, r_peak, t_peak, one_segment)
-         qrs_angle = self.__get_slope(q_peak, r_peak, s_peak, one_segment)
-         rst_angle = self.__get_slope(r_peak, s_peak, t_peak, one_segment)
+         qpr_angle = self.__get_angles(q_peak, p_peak, r_peak, one_segment)
+         prq_angle = self.__get_angles(p_peak, r_peak, q_peak, one_segment)
+         trs_angle = self.__get_angles(t_peak, r_peak, t_peak, one_segment)
+         qrs_angle = self.__get_angles(q_peak, r_peak, s_peak, one_segment)
+         rst_angle = self.__get_angles(r_peak, s_peak, t_peak, one_segment)
+         rqt_angle = self.__get_angles(r_peak, q_peak, t_peak, one_segment)
+         qst_angle = self.__get_angles(q_peak, s_peak, t_peak, one_segment)
+         srq_angle = self.__get_angles(s_peak, r_peak, q_peak, one_segment)
+         tpr_angle = self.__get_angles(t_peak, p_peak, r_peak, one_segment)
+         qts_angle = self.__get_angles(q_peak, t_peak, s_peak, one_segment)
 
                 n_peaks_angle = [
                     qpr_angle,
