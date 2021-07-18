@@ -2,7 +2,6 @@
 #initialize String values for feature sets (will be updated)
 
 #set(<iter>)
-
 #30 sets (to be tested)
 y = set([QR Interval, RS Interval, PQ Interval, QS Interval, PS Interval, PR Interval
          ST Interval, QT Interval, RT Interval, PT Interval, PR Amplitude, PQ Amplitude, 
